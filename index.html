@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Plumbing Pros - Elite Plumbing Services Ireland</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+        
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-fixed">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="relative">
+                        <i class="fas fa-wrench text-3xl text-gradient mr-3"></i>
+                        <div class="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+                    </div>
+                    <span class="text-2xl font-bold text-gradient">Irish Plumbing Pros</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-white transition-all duration-300">Home</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-white transition-all duration-300">About Us</a>
+                    <a href="#services" class="nav-link text-gray-300 hover:text-white transition-all duration-300">Services</a>
+                    <a href="#reviews" class="nav-link text-gray-300 hover:text-white transition-all duration-300">Reviews</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-white transition-all duration-300">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 glass rounded-lg">
+                <a href="#home" class="block py-2 px-4 text-gray-300 hover:text-white transition-colors">Home</a>
+                <a href="#about" class="block py-2 px-4 text-gray-300 hover:text-white transition-colors">About Us</a>
+                <a href="#services" class="block py-2 px-4 text-gray-300 hover:text-white transition-colors">Services</a>
+                <a href="#reviews" class="block py-2 px-4 text-gray-300 hover:text-white transition-colors">Reviews</a>
+                <a href="#contact" class="block py-2 px-4 text-gray-300 hover:text-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <!-- Particles Background -->
+        <div class="particles" id="particles"></div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-purple-500 rounded-full opacity-20 float-animation"></div>
+        <div class="absolute top-40 right-20 w-16 h-16 bg-pink-500 rounded-full opacity-20 float-animation float-delay-1"></div>
+        <div class="absolute bottom-40 left-20 w-24 h-24 bg-blue-500 rounded-full opacity-20 float-animation float-delay-2"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <div class="inline-block mb-4">
+                        <span class="glass px-4 py-2 rounded-full text-sm font-semibold text-shimmer">
+                            🇮🇪 SERVING ALL OF IRELAND
+                        </span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                        <span class="block mb-2">Elite Plumbing</span>
+                        <span class="text-gradient">Excellence</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-gray-200 font-light leading-relaxed">
+                        Transforming Irish homes & businesses with cutting-edge plumbing solutions. 
+                        <span class="text-gradient font-semibold">24/7 emergency response</span> when you need us most.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <button onclick="scrollToSection('contact')" class="btn-primary bg-white text-purple-600 px-8 py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-2xl relative z-10">
+                            <i class="fas fa-bolt mr-2"></i> Emergency Service
+                        </button>
+                        <button onclick="scrollToSection('services')" class="glass text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:bg-opacity-10 transition-all duration-300 border border-white border-opacity-30">
+                            <i class="fas fa-th-large mr-2"></i> Explore Services
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="glass p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-gradient">500+</div>
+                            <div class="text-sm text-gray-300">Happy Clients</div>
+                        </div>
+                        <div class="glass p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-gradient">4.9</div>
+                            <div class="text-sm text-gray-300">Rating</div>
+                        </div>
+                        <div class="glass p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-gradient">15+</div>
+                            <div class="text-sm text-gray-300">Years</div>
+                        </div>
+                        <div class="glass p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-gradient">24/7</div>
+                            <div class="text-sm text-gray-300">Available</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block relative">
+                    <div class="relative">
+                        <img src="https://picsum.photos/seed/plumber/600/500" alt="Professional Plumber" class="rounded-3xl shadow-2xl float-animation">
+                        <div class="absolute -bottom-6 -left-6 glass p-4 rounded-xl">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-white">Certified</div>
+                                    <div class="text-sm text-gray-300">Professional Team</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-6 -right-6 glass p-4 rounded-xl">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-award text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-white">Award</div>
+                                    <div class="text-sm text-gray-300">Best Service 2024</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 section-fade">
+                <span class="glass px-6 py-2 rounded-full text-sm font-semibold text-shimmer inline-block mb-4">
+                    WHO WE ARE
+                </span>
+                <h2 class="text-5xl md:text-6xl font-black mb-6">
+                    <span class="text-gradient">Pioneering Excellence</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
+                <p class="text-gray-300 mt-6 max-w-3xl mx-auto text-lg">
+                    Redefining plumbing standards across Ireland with innovation, precision, and unwavering commitment to excellence.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-16">
+                <div class="section-fade">
+                    <div class="relative">
+                        <img src="https://picsum.photos/seed/team/600/500" alt="Our Team" class="rounded-3xl shadow-2xl">
+                        <div class="absolute -bottom-8 -right-8 glass p-6 rounded-2xl">
+                            <div class="flex items-center gap-4">
+                                <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-trophy text-white text-2xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-white text-xl">15+ Years</div>
+                                    <div class="text-sm text-gray-300">Of Excellence</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-fade space-y-6">
+                    <h3 class="text-4xl font-bold text-white mb-6">
+                        Engineering <span class="text-gradient">Perfection</span> in Every Pipe
+                    </h3>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        As Ireland's premier plumbing service, we've revolutionized the industry with cutting-edge technology and unmatched expertise. Our elite team of certified professionals brings decades of combined experience to every project.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        We don't just fix pipes—we engineer solutions. From state-of-the-art leak detection systems to eco-friendly installations, we're at the forefront of plumbing innovation, serving Dublin, Cork, Galway, and beyond with precision and passion.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="glass p-6 rounded-2xl hover:scale-105 transition-transform duration-300">
+                            <div class="w-14 h-14 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-certificate text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-2">Certified Masters</h4>
+                            <p class="text-gray-400 text-sm">Fully licensed & insured professionals</p>
+                        </div>
+                        <div class="glass p-6 rounded-2xl hover:scale-105 transition-transform duration-300">
+                            <div class="w-14 h-14 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-bolt text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-2">Lightning Fast</h4>
+                            <p class="text-gray-400 text-sm">30-minute emergency response</p>
+                        </div>
+                        <div class="glass p-6 rounded-2xl hover:scale-105 transition-transform duration-300">
+                            <div class="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-shield-alt text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-2">Guaranteed</h4>
+                            <p class="text-gray-400 text-sm">100% satisfaction warranty</p>
+                        </div>
+                        <div class="glass p-6 rounded-2xl hover:scale-105 transition-transform duration-300">
+                            <div class="w-14 h-14 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-clock text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-2">24/7 Service</h4>
+                            <p class="text-gray-400 text-sm">Always here when you need us</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats Section -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 section-fade">
+                <div class="glass-dark p-8 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl font-black text-gradient mb-2">10K+</div>
+                    <div class="text-gray-300">Projects Completed</div>
+                </div>
+                <div class="glass-dark p-8 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl font-black text-gradient mb-2">98%</div>
+                    <div class="text-gray-300">Client Satisfaction</div>
+                </div>
+                <div class="glass-dark p-8 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl font-black text-gradient mb-2">50+</div>
+                    <div class="text-gray-300">Expert Technicians</div>
+                </div>
+                <div class="glass-dark p-8 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl font-black text-gradient mb-2">24/7</div>
+                    <div class="text-gray-300">Emergency Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 section-fade">
+                <span class="glass px-6 py-2 rounded-full text-sm font-semibold text-shimmer inline-block mb-4">
+                    WHAT WE OFFER
+                </span>
+                <h2 class="text-5xl md:text-6xl font-black mb-6">
+                    <span class="text-gradient">Premium Services</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
+                <p class="text-gray-300 mt-6 max-w-3xl mx-auto text-lg">
+                    From emergency repairs to complete installations, we deliver cutting-edge plumbing solutions with precision and expertise.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card p-8 rounded-3xl section-fade group">
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                        <div class="relative glass rounded-2xl w-16 h-16 flex items-center justify-center">
+                            <i class="fas fa-bolt text-3xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Emergency Response</h3>
+                    <p class="text-gray-400 mb-6">Lightning-fast 24/7 emergency services when disaster strikes. We're your first call in any plumbing crisis.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-red-500 mr-3"></i>
+                            <span>30-minute response time</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-red-500 mr-3"></i>
+                            <span>Burst pipe specialists</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-red-500 mr-3"></i>
+                            <span>Water damage control</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card p-8 rounded-3xl section-fade group">
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                        <div class="relative glass rounded-2xl w-16 h-16 flex items-center justify-center">
+                            <i class="fas fa-home text-3xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Residential Excellence</h3>
+                    <p class="text-gray-400 mb-6">Complete home plumbing solutions with cutting-edge technology and eco-friendly options for modern Irish homes.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-blue-500 mr-3"></i>
+                            <span>Smart plumbing systems</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-blue-500 mr-3"></i>
+                            <span>Energy-efficient solutions</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-blue-500 mr-3"></i>
+                            <span>Full home renovations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card p-8 rounded-3xl section-fade group">
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                        <div class="relative glass rounded-2xl w-16 h-16 flex items-center justify-center">
+                            <i class="fas fa-building text-3xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Commercial Solutions</h3>
+                    <p class="text-gray-400 mb-6">Enterprise-grade plumbing systems for businesses, offices, and industrial facilities across Ireland.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-purple-500 mr-3"></i>
+                            <span>Large-scale installations</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-purple-500 mr-3"></i>
+                            <span>Preventive maintenance</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-purple-500 mr-3"></i>
+                            <span>Compliance certifications</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card p-8 rounded-3xl section-fade group">
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                        <div class="relative glass rounded-2xl w-16 h-16 flex items-center justify-center">
+                            <i class="fas fa-bath text-3xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Luxury Bathrooms</h3>
+                    <p class="text-gray-400 mb-6">Designer bathroom installations and renovations with premium fixtures and smart technology integration.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span>Custom designs</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span>Smart showers & baths</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span>Premium fixtures</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card p-8 rounded-3xl section-fade group">
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                        <div class="relative glass rounded-2xl w-16 h-16 flex items-center justify-center">
+                            <i class="fas fa-fire text-3xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Advanced Heating</h3>
+                    <p class="text-gray-400 mb-6">State-of-the-art heating solutions including smart thermostats, underfloor heating, and energy-efficient boilers.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                            <span>Smart heating systems</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                            <span>Underfloor heating</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                            <span>Energy-efficient boilers</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card p-8 rounded-3xl section-fade group">
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                        <div class="relative glass rounded-2xl w-16 h-16 flex items-center justify-center">
+                            <i class="fas fa-tools text-3xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Preventive Care</h3>
+                    <p class="text-gray-400 mb-6">Proactive maintenance programs with AI-powered diagnostics to prevent issues before they occur.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-indigo-500 mr-3"></i>
+                            <span>Annual inspections</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-indigo-500 mr-3"></i>
+                            <span>AI leak detection</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-indigo-500 mr-3"></i>
+                            <span>Priority service plans</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="mt-16 text-center section-fade">
+                <div class="glass-dark p-12 rounded-3xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">Need a Custom Solution?</h3>
+                    <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                        Our expert team specializes in bespoke plumbing solutions tailored to your unique requirements.
+                    </p>
+                    <button onclick="scrollToSection('contact')" class="btn-primary bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-2xl">
+                        <i class="fas fa-rocket mr-2"></i> Get Custom Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 section-fade">
+                <span class="glass px-6 py-2 rounded-full text-sm font-semibold text-shimmer inline-block mb-4">
+                    CLIENT TESTIMONIALS
+                </span>
+                <h2 class="text-5xl md:text-6xl font-black mb-6">
+                    <span class="text-gradient">Success Stories</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
+                <p class="text-gray-300 mt-6 max-w-3xl mx-auto text-lg">
+                    Real experiences from real clients across Ireland who trust us with their plumbing needs.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card p-8 rounded-3xl section-fade group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/customer1/60/60" alt="Mary O'Connor" class="w-14 h-14 rounded-full mr-4 border-2 border-purple-500">
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Mary O'Connor</h4>
+                                <p class="text-gray-400 text-sm">Dublin Homeowner</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic leading-relaxed mb-4">
+                        "Absolutely phenomenal service! When our basement flooded at 3 AM, Irish Plumbing Pros were there in 20 minutes. Their expertise and professionalism saved us from catastrophic damage. Truly the best in Ireland!"
+                    </p>
+                    <div class="flex items-center text-purple-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Emergency Repair • March 2024</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-3xl section-fade group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/customer2/60/60" alt="Patrick Murphy" class="w-14 h-14 rounded-full mr-4 border-2 border-blue-500">
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Patrick Murphy</h4>
+                                <p class="text-gray-400 text-sm">Cork Business Owner</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic leading-relaxed mb-4">
+                        "We hired them for our restaurant's complete plumbing overhaul. The attention to detail and quality of work exceeded all expectations. They minimized downtime and delivered everything on schedule. Outstanding commercial service!"
+                    </p>
+                    <div class="flex items-center text-blue-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Commercial Installation • February 2024</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-3xl section-fade group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/customer3/60/60" alt="Sarah Kelly" class="w-14 h-14 rounded-full mr-4 border-2 border-green-500">
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Sarah Kelly</h4>
+                                <p class="text-gray-400 text-sm">Galway Resident</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic leading-relaxed mb-4">
+                        "Our luxury bathroom renovation was handled with incredible precision. The team suggested eco-friendly options that saved us money long-term. Every detail was perfect. Worth every penny!"
+                    </p>
+                    <div class="flex items-center text-green-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Bathroom Renovation • January 2024</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-3xl section-fade group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/customer4/60/60" alt="Michael Byrne" class="w-14 h-14 rounded-full mr-4 border-2 border-orange-500">
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Michael Byrne</h4>
+                                <p class="text-gray-400 text-sm">Limerick Property Manager</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic leading-relaxed mb-4">
+                        "Managing 50+ properties, we need reliable partners. Irish Plumbing Pros has been our go-to for 5 years. Their preventive maintenance program has reduced emergencies by 90%."
+                    </p>
+                    <div class="flex items-center text-orange-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Maintenance Contract • Long-term Client</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-3xl section-fade group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/customer5/60/60" alt="Emma Walsh" class="w-14 h-14 rounded-full mr-4 border-2 border-pink-500">
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Emma Walsh</h4>
+                                <p class="text-gray-400 text-sm">Waterford Homeowner</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic leading-relaxed mb-4">
+                        "The smart heating system they installed transformed our home. We're saving 40% on energy bills! The team was patient, explained everything, and the follow-up support has been amazing."
+                    </p>
+                    <div class="flex items-center text-pink-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Heating System • December 2023</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-3xl section-fade group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/customer6/60/60" alt="David O'Leary" class="w-14 h-14 rounded-full mr-4 border-2 border-indigo-500">
+                            <div>
+                                <h4 class="font-bold text-white text-lg">David O'Leary</h4>
+                                <p class="text-gray-400 text-sm">Sligo Contractor</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic leading-relaxed mb-4">
+                        "As a contractor, I need subcontractors who deliver excellence. Irish Plumbing Pros never disappoints. Their technical knowledge and problem-solving skills are second to none."
+                    </p>
+                    <div class="flex items-center text-indigo-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>New Construction • Regular Partner</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats Section -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 section-fade">
+                <div class="glass-dark p-8 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl font-black text-gradient mb-2">2K+</div>
+                    <div class="text-gray-300">5-Star Reviews</div>
+                </div>
+                <div class="glass-dark p-8 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl font-black text-gradient mb-2">99%</div>
+                    <div class="text-gray-300">Client Retention</div>
+                </div>
+                <div class="glass-dark p-8 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl font-black text-gradient mb-2">30min</div>
+                    <div class="text-gray-300">Avg Response Time</div>
+                </div>
+                <div class="glass-dark p-8 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl font-black text-gradient mb-2">100%</div>
+                    <div class="text-gray-300">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 section-fade">
+                <span class="glass px-6 py-2 rounded-full text-sm font-semibold text-shimmer inline-block mb-4">
+                    CONNECT WITH US
+                </span>
+                <h2 class="text-5xl md:text-6xl font-black mb-6">
+                    <span class="text-gradient">Start Your Project</span>
+                </h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
+                <p class="text-gray-300 mt-6 max-w-3xl mx-auto text-lg">
+                    Ready to transform your plumbing experience? Get in touch with our expert team today.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="section-fade">
+                    <form id="contact-form" class="glass-dark p-8 rounded-3xl">
+                        <div class="mb-6">
+                            <label class="block text-white font-semibold mb-2" for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input w-full px-4 py-3 rounded-lg text-white" required>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-white font-semibold mb-2" for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input w-full px-4 py-3 rounded-lg text-white" required>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-white font-semibold mb-2" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input w-full px-4 py-3 rounded-lg text-white" required>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-white font-semibold mb-2" for="service">Service Needed</label>
+                            <select id="service" name="service" class="form-input w-full px-4 py-3 rounded-lg text-white">
+                                <option value="">Select a service</option>
+                                <option value="emergency">Emergency Repair</option>
+                                <option value="residential">Residential Plumbing</option>
+                                <option value="commercial">Commercial Plumbing</option>
+                                <option value="bathroom">Bathroom Plumbing</option>
+                                <option value="heating">Heating Services</option>
+                                <option value="maintenance">Maintenance</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-white font-semibold mb-2" for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" class="form-input w-full px-4 py-3 rounded-lg text-white" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-2xl">
+                            <i class="fas fa-rocket mr-2"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="section-fade space-y-6">
+                    <div class="glass-dark p-8 rounded-3xl">
+                        <h3 class="text-2xl font-bold text-white mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-phone text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Emergency Hotline</p>
+                                    <p class="font-bold text-white text-lg">+353 1 234 5678</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-envelope text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Email Us</p>
+                                    <p class="font-bold text-white text-lg">info@irishplumbingpros.ie</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Visit Our Office</p>
+                                    <p class="font-bold text-white text-lg">123 Main Street, Dublin</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-clock text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Business Hours</p>
+                                    <p class="font-bold text-white text-lg">24/7 Emergency Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-dark p-8 rounded-3xl border-2 border-red-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4 animate-pulse">
+                                <i class="fas fa-exclamation-triangle text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-white">Emergency Plumbing?</h4>
+                                <p class="text-gray-300 text-sm">Don't wait for disaster to strike!</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">For immediate assistance, call our 24/7 emergency hotline. We're always ready to help!</p>
+                        <a href="tel:+35312345678" class="btn-primary w-full bg-gradient-to-r from-red-500 to-orange-500 text-white py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-2xl inline-block text-center">
+                            <i class="fas fa-phone-alt mr-2"></i> Emergency: +353 1 234 5678
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="section-fade">
+                    <div class="flex items-center mb-6">
+                        <div class="relative">
+                            <i class="fas fa-wrench text-4xl text-gradient mr-3"></i>
+                            <div class="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+                        </div>
+                        <span class="text-3xl font-black text-gradient">Irish Plumbing Pros</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">Your trusted partner for all plumbing needs across Ireland. Quality service, guaranteed satisfaction.</p>
+                    <div class="mt-4 flex items-center space-x-4">
+                        <a href="tel:+35312345678" class="text-purple-400 hover:text-purple-300 transition-colors">
+                            <i class="fas fa-phone-alt mr-2"></i>+353 1 234 5678
+                        </a>
+                        <a href="mailto:info@irishplumbingpros.ie" class="text-purple-400 hover:text-purple-300 transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>info@irishplumbingpros.ie
+                        </a>
+                    </div>
+                </div>
+                <div class="section-fade">
+                    <h4 class="text-xl font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-purple-400 transition-colors flex items-center">
+                            <i class="fas fa-chevron-right mr-2 text-xs"></i>Home
+                        </a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-purple-400 transition-colors flex items-center">
+                            <i class="fas fa-chevron-right mr-2 text-xs"></i>About Us
+                        </a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-purple-400 transition-colors flex items-center">
+                            <i class="fas fa-chevron-right mr-2 text-xs"></i>Services
+                        </a></li>
+                        <li><a href="#reviews" class="text-gray-400 hover:text-purple-400 transition-colors flex items-center">
+                            <i class="fas fa-chevron-right mr-2 text-xs"></i>Reviews
+                        </a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-purple-400 transition-colors flex items-center">
+                            <i class="fas fa-chevron-right mr-2 text-xs"></i>Contact
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="section-fade">
+                    <h4 class="text-xl font-bold text-white mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors flex items-center">
+                            <i class="fas fa-bolt mr-2 text-xs"></i>Emergency Repairs
+                        </a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors flex items-center">
+                            <i class="fas fa-home mr-2 text-xs"></i>Residential Plumbing
+                        </a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors flex items-center">
+                            <i class="fas fa-building mr-2 text-xs"></i>Commercial Plumbing
+                        </a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors flex items-center">
+                            <i class="fas fa-fire mr-2 text-xs"></i>Heating Services
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="section-fade">
+                    <h4 class="text-xl font-bold text-white mb-6">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-6">
+                        <a href="https://facebook.com" target="_blank" class="glass w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform group">
+                            <i class="fab fa-facebook-f text-white group-hover:text-purple-400 transition-colors"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="glass w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform group">
+                            <i class="fab fa-instagram text-white group-hover:text-purple-400 transition-colors"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="glass w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform group">
+                            <i class="fab fa-linkedin-in text-white group-hover:text-purple-400 transition-colors"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="glass w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform group">
+                            <i class="fab fa-twitter text-white group-hover:text-purple-400 transition-colors"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mb-4">Follow us on social media for updates and special offers!</p>
+                    <div class="glass p-4 rounded-xl">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm text-gray-400">Newsletter</span>
+                            <span class="text-xs text-gray-500">Join 2K+ subscribers</span>
+                        </div>
+                        <form class="flex gap-2">
+                            <input type="email" placeholder="Your email" class="form-input flex-1 px-3 py-2 rounded-lg text-sm text-white">
+                            <button type="submit" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:scale-105 transition-transform">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 mt-8 section-fade">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2024 Irish Plumbing Pros. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-6 text-sm text-gray-400">
+                        <a href="#" class="hover:text-purple-400 transition-colors">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="#" class="hover:text-purple-400 transition-colors">Terms of Service</a>
+                        <span>|</span>
+                        <a href="#" class="hover:text-purple-400 transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p class="text-gray-500 text-xs">
+                        Designed with <i class="fas fa-heart text-red-500 mx-1"></i> in Ireland
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
